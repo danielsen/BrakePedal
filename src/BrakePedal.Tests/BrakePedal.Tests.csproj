@@ -38,6 +38,9 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Enyim.Caching, Version=2.16.0.0, Culture=neutral, PublicKeyToken=cec98615db04012e, processorArchitecture=MSIL">
+      <HintPath>..\packages\EnyimMemcached.2.16.0\lib\net35\Enyim.Caching.dll</HintPath>
+    </Reference>
     <Reference Include="NSubstitute">
       <HintPath>..\packages\NSubstitute.1.7.2.0\lib\NET45\NSubstitute.dll</HintPath>
     </Reference>
@@ -65,6 +68,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="LimiterTests.cs" />
+    <Compile Include="MemcachedThrottleRepositoryTests.cs" />
     <Compile Include="RedisThrottleRepositoryTests.cs" />
     <Compile Include="ThrottlePolicyTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -74,6 +78,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BrakePedal.Memcached\BrakePedal.Memcached.csproj">
+      <Project>{c0579989-d674-4153-a375-ac1a38ee45a1}</Project>
+      <Name>BrakePedal.Memcached</Name>
+    </ProjectReference>
     <ProjectReference Include="..\BrakePedal\BrakePedal.csproj">
       <Project>{878B76C5-C461-4674-B168-3AA569E2E58D}</Project>
       <Name>BrakePedal</Name>

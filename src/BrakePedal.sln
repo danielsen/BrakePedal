@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrakePedal.Http", "BrakePedal.Http\BrakePedal.Http.csproj", "{F049811F-BC05-4CEE-B329-CE3BF2E2E4BE}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrakePedal.Tests", "BrakePedal.Tests\BrakePedal.Tests.csproj", "{CFDC497B-D31B-414B-BA93-ABF5954E1F63}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrakePedal", "BrakePedal\BrakePedal.csproj", "{878B76C5-C461-4674-B168-3AA569E2E58D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BrakePedal.Memcached", "BrakePedal.Memcached\BrakePedal.Memcached.csproj", "{C0579989-D674-4153-A375-AC1A38EE45A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,8 +35,15 @@ Global
 		{878B76C5-C461-4674-B168-3AA569E2E58D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{878B76C5-C461-4674-B168-3AA569E2E58D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{878B76C5-C461-4674-B168-3AA569E2E58D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0579989-D674-4153-A375-AC1A38EE45A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0579989-D674-4153-A375-AC1A38EE45A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0579989-D674-4153-A375-AC1A38EE45A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0579989-D674-4153-A375-AC1A38EE45A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A52FF8D-F5DE-42B5-91EC-A1F2492C74E1}
 	EndGlobalSection
 EndGlobal
